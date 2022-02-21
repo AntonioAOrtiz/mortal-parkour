@@ -3,6 +3,6 @@
     "babel-preset-env": "^1.7.0",
     "jest": "^27.5.1",
     "parcel-bundler": "^1.12.5",
-    "sass": "^1.49.7"
+    "sass": "^1.49.8"
   }
 }
