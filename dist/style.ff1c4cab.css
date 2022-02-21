@@ -1,11 +1,47 @@
 @charset "UTF-8";
 /* IMPORTE DE LAS TIPOGRAFÍAS */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 *, *::before, *::after {
-  font-family: "Roboto", serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+@font-face {
+  *, *::before, *::after {
+    font-family: "Poppins", sans-serif;
+    src: url("/Poppins-Regular.afe0ffc8.ttf");
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+header img {
+  height: 200px;
+  width: 200px;
+}
+header ul {
+  padding-inline-start: 0px;
+}
+header ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 2em;
+}
+@font-face {
+  header ul li {
+    font-family: "BlowBrush", sans-serif;
+    src: url("/blowbrush.105b11c9.ttf");
+  }
+}
+header ul li a {
+  color: red;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=/style.ff1c4cab.css.map */

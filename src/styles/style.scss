@@ -1,10 +1,61 @@
 /* IMPORTE DE LAS TIPOGRAFÍAS */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 
 *, *::before, *::after{    
-    font-family: 'Roboto', serif;
+    @font-face {
+        font-family: 'Poppins', sans-serif;
+        src: url("/fonts/Poppins-Regular.ttf");
+        
+    }
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none
+}
+
+
+
+header{
+    @include flex();
+    background-color: white;
+    
+    img{
+        height: 200px;
+        width: 200px;
+    }
+
+    ul{
+        padding-inline-start: 0px;
+
+        li{
+            @font-face {
+                font-family: 'BlowBrush', sans-serif;
+                src: url("/fonts/blowbrush.ttf");
+                
+            }
+            list-style: none;
+            display: inline-block;
+            margin: 2em;
+
+            a{
+                
+                
+                color:red;
+                font-weight: bold;
+                
+            }
+        }
+    }
+}
+
+
+
 
