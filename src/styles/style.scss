@@ -1,60 +1,50 @@
-/* IMPORTE DE LAS TIPOGRAFÍAS */
-
+@import 'variables.scss';
+@import 'header.scss';
+@import 'section.scss';
 
 *, *::before, *::after{    
-    @font-face {
-        font-family: 'Poppins', sans-serif;
-        src: url("/fonts/Poppins-Regular.ttf");
-        
-    }
+    font-family: "Poppins","san-serif";
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-@mixin flex {
-    display: flex;
-    justify-content: space-between;
 }
 
 a{
     text-decoration: none
 }
 
-
-
-header{
-    @include flex();
-    background-color: white;
-    
-    img{
-        height: 200px;
-        width: 200px;
-    }
-
-    ul{
-        padding-inline-start: 0px;
-
-        li{
-            @font-face {
-                font-family: 'BlowBrush', sans-serif;
-                src: url("/fonts/blowbrush.ttf");
-                
-            }
-            list-style: none;
-            display: inline-block;
-            margin: 2em;
-
-            a{
-                
-                
-                color:red;
-                font-weight: bold;
-                
-            }
-        }
-    }
+body{
+    background-color: red;
 }
+
+
+
+section{
+    @include flex();
+    flex-wrap: wrap;
+    padding: 6vh;
+    margin-top: 4vh;
+}
+
+#logo{
+    @include position(relative,$top:3vh);
+    display: block;
+    margin: auto;
+    height: 70%;
+    width: 60%;
+}
+
+#video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: -10;
+    visibility: visible;
+    }
+
+
 
 
 

@@ -1,0 +1,14 @@
+@import 'variables.scss';
+
+section{
+    @include flex();
+    flex-wrap: wrap;
+    padding: 6vh;
+    margin-top: 4vh;
+
+    p{
+        font-weight: bold;
+    }
+    
+}
+

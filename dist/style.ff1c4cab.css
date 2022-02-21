@@ -1,29 +1,28 @@
-@charset "UTF-8";
-/* IMPORTE DE LAS TIPOGRAFÍAS */
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url("/Poppins-Regular.afe0ffc8.ttf");
 }
 @font-face {
-  *, *::before, *::after {
-    font-family: "Poppins", sans-serif;
-    src: url("/Poppins-Regular.afe0ffc8.ttf");
-  }
+  font-family: "BlowBrush", sans-serif;
+  src: url("/blowbrush.105b11c9.ttf");
 }
-
-a {
-  text-decoration: none;
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url("/Poppins-Regular.afe0ffc8.ttf");
 }
-
+@font-face {
+  font-family: "BlowBrush", sans-serif;
+  src: url("/blowbrush.105b11c9.ttf");
+}
 header {
   display: flex;
   justify-content: space-between;
-  background-color: white;
+  background-color: black;
 }
 header img {
-  height: 200px;
-  width: 200px;
+  height: 110px;
+  width: 150px;
+  background-color: white;
 }
 header ul {
   padding-inline-start: 0px;
@@ -33,15 +32,77 @@ header ul li {
   display: inline-block;
   margin: 2em;
 }
-@font-face {
-  header ul li {
-    font-family: "BlowBrush", sans-serif;
-    src: url("/blowbrush.105b11c9.ttf");
-  }
-}
 header ul li a {
+  font-family: "BlowBrush";
+  font-size: 20px;
   color: red;
   font-weight: bold;
+}
+header ul li a:hover {
+  font-size: 24px;
+  transition: all 0.2s ease-in;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url("/Poppins-Regular.afe0ffc8.ttf");
+}
+@font-face {
+  font-family: "BlowBrush", sans-serif;
+  src: url("/blowbrush.105b11c9.ttf");
+}
+section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 6vh;
+  margin-top: 4vh;
+}
+section p {
+  font-weight: bold;
+}
+
+*, *::before, *::after {
+  font-family: "Poppins", "san-serif";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: red;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 6vh;
+  margin-top: 4vh;
+}
+
+#logo {
+  position: relative;
+  top: 3vh;
+  display: block;
+  margin: auto;
+  height: 70%;
+  width: 60%;
+}
+
+#video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: -10;
+  visibility: visible;
 }
 
 /*# sourceMappingURL=/style.ff1c4cab.css.map */

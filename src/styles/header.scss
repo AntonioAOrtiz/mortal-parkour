@@ -1,0 +1,37 @@
+@import 'variables.scss';
+
+header{
+    @include flex();
+    background-color: black;
+    
+    img{
+        height: 110px;
+        width: 150px;
+        background-color: white;
+    }
+
+    ul{
+        padding-inline-start: 0px;
+
+        li{
+            
+            list-style: none;
+            display: inline-block;
+            margin: 2em;
+
+            a{
+                font-family: "BlowBrush";
+                font-size: 20px;
+                color:red;
+                font-weight: bold;
+                
+            }
+
+            a:hover{
+                font-size: 24px;
+                transition: all 0.2s ease-in;
+                font-weight: bold;
+            }
+        }
+    }
+}

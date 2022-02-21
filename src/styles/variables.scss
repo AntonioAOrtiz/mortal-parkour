@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url("/fonts/Poppins-Regular.ttf");
+    
+}
+
+@font-face {
+    font-family: 'BlowBrush', sans-serif;
+    src: url("/fonts/blowbrush.ttf");
+    
+}
+
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
