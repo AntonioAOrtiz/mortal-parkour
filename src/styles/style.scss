@@ -20,13 +20,6 @@ body{
 }
 
 
-section{
-    @include flex();
-    flex-wrap: wrap;
-    padding: 6vh;
-    margin-top: 4vh;
-}
-
 h2{
     font-family: "BlowBrush";
 }

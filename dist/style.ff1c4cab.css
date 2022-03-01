@@ -52,6 +52,13 @@ header ul li a:hover {
   font-family: "BlowBrush", sans-serif;
   src: url("/blowbrush.105b11c9.ttf");
 }
+section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 6vh;
+  margin-top: 4vh;
+}
 section p {
   font-weight: bold;
 }
@@ -165,14 +172,6 @@ a {
 
 body {
   background-color: gray;
-}
-
-section {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 6vh;
-  margin-top: 4vh;
 }
 
 h2 {
