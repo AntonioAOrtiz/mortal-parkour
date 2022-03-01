@@ -180,6 +180,17 @@ footer {
   text-align: center;
 }
 
+/* IMPORTE DE LAS TIPOGRAFÍAS */
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url("/Poppins-Regular.afe0ffc8.ttf");
+}
+@font-face {
+  font-family: "BlowBrush", sans-serif;
+  src: url("/blowbrush.105b11c9.ttf");
+}
+/* MIXIN (función) para display flex. */
+/*MIXIN (función) para la posición de un elemento. */
 /* RESPONSIVE */
 @media (max-width: 1000px) {
   #audios {
@@ -189,12 +200,22 @@ footer {
     padding: 1em;
   }
 }
+@media (max-width: 760px) {
+  #logo {
+    position: absolute;
+  }
+}
 @media (max-width: 615px) {
   header {
     flex-direction: column;
   }
   header img {
     margin: 0 auto;
+  }
+
+  #video {
+    position: absolute;
+    height: 100%;
   }
 }
 *, *::before, *::after {

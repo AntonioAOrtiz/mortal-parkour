@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 /* RESPONSIVE */
 @media (max-width: 1000px){
     #audios{
@@ -8,6 +10,12 @@
     }
 }
 
+@media (max-width: 760px){
+    #logo{
+        @include position(absolute);
+    }
+}
+
 @media (max-width: 615px){
     header{
         flex-direction: column;
@@ -15,5 +23,9 @@
         img{
             margin: 0 auto;
         }
+    }
+    #video{
+        @include position(absolute);
+        height: 100%;
     }
 }
