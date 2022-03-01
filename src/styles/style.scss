@@ -1,6 +1,7 @@
 @import 'variables.scss';
 @import 'header.scss';
 @import 'section.scss';
+@import 'carrusel.scss';
 
 *, *::before, *::after{    
     font-family: "Poppins","san-serif";
@@ -13,10 +14,10 @@ a{
     text-decoration: none
 }
 
-body{
-    background-color: red;
-}
 
+body{
+    background-color: gray;
+}
 
 
 section{
@@ -24,6 +25,10 @@ section{
     flex-wrap: wrap;
     padding: 6vh;
     margin-top: 4vh;
+}
+
+h2{
+    font-family: "BlowBrush";
 }
 
 #logo{
@@ -43,6 +48,7 @@ section{
     z-index: -10;
     visibility: visible;
     }
+
 
 
 

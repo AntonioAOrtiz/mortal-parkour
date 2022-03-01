@@ -1,0 +1,91 @@
+@import 'variables.scss';
+
+.carrusel{
+    width: 90%;
+    padding: 2em;
+    background-color: red;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.carrusel .grande{
+    width: 200%;
+    padding: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row nowrap;
+    align-items: center;
+    transition: all .9s ease;
+    transform: translateX(50%);
+}
+
+.carrusel .imgPersonaje{
+    width: calc(100% / 2);
+}
+
+.carrusel .puntos{
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrusel .punto{
+    width: 2em;
+    height: 2em;
+    list-style: none;
+    background-color: black;
+    border-radius: 25px;
+}
+
+.carrusel .punto.activo{
+    background-color: white;
+}
+
+.carrusel2{
+    width: 90%;
+    padding: 2em;
+    background-color: red;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.carrusel2 .grande2{
+    width: 300%;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    align-items: center;
+    transition: all .9s ease;
+    transform: translateX(calc(100% / 3));
+    
+}
+
+.carrusel2 .imgEscenario{
+    width: 50%;
+}
+
+.carrusel2 .puntos2{
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrusel2 .punto2{
+    width: 2em;
+    height: 2em;
+    list-style: none;
+    background-color: black;
+    border-radius: 25px;
+    
+}
+
+.carrusel2 .punto2.activo2{
+    background-color: white;
+}

@@ -4,6 +4,8 @@
     <meta charset="utf-8"/>
     <title>Mortal Parkour</title>
     <link rel="stylesheet" href="styles/style.scss" />
+    <script defer src="js/carrusel.js"></script>
+    <script defer src="js/carrusel2.js"></script>
   </head>
   <body>
     <header>
@@ -30,44 +32,71 @@
           <h1>PARKOUR DE LA VIEJA ESCUELA</h1>
           <p>Mortal Parkour es un juego de Plataformas en el que tendrás que escalar y saltar edificios de ciudades reales para llegar a tu meta.</p>
         </section>  
-        <section id="personaes">
-            <h2>PERSONAJES</h2>
-            <picture>
-              <img id="personaje1" src="images/personaje_diseño.svg" alt="Personaje 1" />
-            </picture>
-            <picture>  
-              <img id="personaje1" src="images/personaje.svg" alt="Personaje 2" />
-            </picture>  
+        <section id="personajes">
+          
+              <div class="carrusel">
+                <h2>Personajes</h2>
+                <div class="grande">
+                  <picture>
+                    <img id="personaje1" src="images/personaje_diseño.svg" alt="Personaje 1" class="imgPersonaje" />
+                  </picture>
+                  <picture>  
+                    <img id="personaje2" src="images/personaje.svg" alt="Personaje 2" class="imgPersonaje" />
+                  </picture>
+                </div>
+
+                <ul class="puntos">
+                  <li class="punto activo"></li>
+                  <li class="punto"></li>
+                </ul>
+              </div>    
         </section>
         <section id="escenarios">
-          <h2>ESCENARIOS</h2>
-          <p></p>
-          <picture>
-            <img src="images/MortalParkourEscenario.png" alt="Escenario Rio de Janeiro" />
-          </picture>
-          <picture>
-            <img src="images/newYork.png" alt="Escenario New York" />
-          </picture>
-          <picture>  
-            <img src="images/pantalla.png" alt="Escenario París" />
-          </picture>  
+            <div class="carrusel2">
+              <h2>ESCENARIOS</h2>
+              <div class="grande2">
+                <picture>
+                  <source media="(max-width: 799px)" srcset="images/MortalParkourEscenario500.png">
+                  <source media="(min-width: 800px)" srcset="images/MortalParkourEscenario.png">
+                  <img src="images/MortalParkourEscenario.png" alt="Escenario Rio de Janeiro" class="imgEscenario"/>
+                </picture>
+                <picture>
+                  <source media="(max-width: 799px)" srcset="images/newYork500.png">
+                  <source media="(min-width: 800px)" srcset="images/newYork.png">
+                  <img src="images/newYork.png" alt="Escenario New York" class="imgEscenario"/>
+                </picture>
+                <picture>
+                  <source media="(max-width: 799px)" srcset="images/pantalla500.png">
+                  <source media="(min-width: 800px)" srcset="images/pantalla1.png">  
+                  <img src="images/pantalla1.png" alt="Escenario París" class="imgEscenario"/>
+                </picture>
+              </div>
+              
+              <ul class="puntos2">
+                <li class="punto2 activo2"></li>
+                <li class="punto2"></li>
+                <li class="punto2"></li>
+              </ul>
+            </div>    
         </section>
         <section id="audios">
           <h2>AUDIOS</h2>
-          <p></p>
           <div id="ambiente">
-          <audio controls loop>
-            <source src="audios/ambiente.mp3" />
-            <source src="audios/ambiente.ogg" />
-          </audio>
+            <p>AMBIENTE</p>
+            <audio controls loop>
+              <source src="audios/ambiente.mp3" />
+              <source src="audios/ambiente.ogg" />
+            </audio>
           </div>
           <div id="gameover">
+            <p>GAME OVER</p>
             <audio controls loop>
               <source src="audios/gameOver.mp3" />
               <source src="audios/gameOver.ogg" />
             </audio>
           </div>
           <div id="salto"> 
+            <p>SALTO</p>
             <audio controls loop>
               <source src="audios/salto.mp3" />
               <source src="audios/salto.ogg" />
@@ -76,4 +105,5 @@
         </section>
       </main>
     </body>
+    
 </html>

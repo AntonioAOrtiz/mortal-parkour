@@ -52,15 +52,104 @@ header ul li a:hover {
   font-family: "BlowBrush", sans-serif;
   src: url("/blowbrush.105b11c9.ttf");
 }
-section {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 6vh;
-  margin-top: 4vh;
-}
 section p {
   font-weight: bold;
+}
+
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url("/Poppins-Regular.afe0ffc8.ttf");
+}
+@font-face {
+  font-family: "BlowBrush", sans-serif;
+  src: url("/blowbrush.105b11c9.ttf");
+}
+.carrusel {
+  width: 90%;
+  padding: 2em;
+  background-color: red;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.carrusel .grande {
+  width: 200%;
+  padding: 2em;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row nowrap;
+  align-items: center;
+  transition: all 0.9s ease;
+  transform: translateX(50%);
+}
+
+.carrusel .imgPersonaje {
+  width: 50%;
+}
+
+.carrusel .puntos {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrusel .punto {
+  width: 2em;
+  height: 2em;
+  list-style: none;
+  background-color: black;
+  border-radius: 25px;
+}
+
+.carrusel .punto.activo {
+  background-color: white;
+}
+
+.carrusel2 {
+  width: 90%;
+  padding: 2em;
+  background-color: red;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.carrusel2 .grande2 {
+  width: 300%;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  align-items: center;
+  transition: all 0.9s ease;
+  transform: translateX(33.3333333333%);
+}
+
+.carrusel2 .imgEscenario {
+  width: 50%;
+}
+
+.carrusel2 .puntos2 {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrusel2 .punto2 {
+  width: 2em;
+  height: 2em;
+  list-style: none;
+  background-color: black;
+  border-radius: 25px;
+}
+
+.carrusel2 .punto2.activo2 {
+  background-color: white;
 }
 
 *, *::before, *::after {
@@ -75,7 +164,7 @@ a {
 }
 
 body {
-  background-color: red;
+  background-color: gray;
 }
 
 section {
@@ -84,6 +173,10 @@ section {
   flex-wrap: wrap;
   padding: 6vh;
   margin-top: 4vh;
+}
+
+h2 {
+  font-family: "BlowBrush";
 }
 
 #logo {
