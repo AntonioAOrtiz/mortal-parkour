@@ -118,6 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/carrusel2.js":[function(require,module,exports) {
+// Comentarios en Carrusel 1.
 var grande2 = document.querySelector('.grande2');
 var punto2 = document.querySelectorAll('.punto2');
 punto2.forEach(function (cadaPunto, i) {
@@ -159,7 +160,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49696" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53615" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

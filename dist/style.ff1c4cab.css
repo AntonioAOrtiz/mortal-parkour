@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* IMPORTE DE LAS TIPOGRAFÍAS */
 @font-face {
   font-family: "Poppins", sans-serif;
   src: url("/Poppins-Regular.afe0ffc8.ttf");
@@ -6,6 +8,9 @@
   font-family: "BlowBrush", sans-serif;
   src: url("/blowbrush.105b11c9.ttf");
 }
+/* MIXIN (función) para display flex. */
+/*MIXIN (función) para la posición de un elemento. */
+/* IMPORTE DE LAS TIPOGRAFÍAS */
 @font-face {
   font-family: "Poppins", sans-serif;
   src: url("/Poppins-Regular.afe0ffc8.ttf");
@@ -14,6 +19,8 @@
   font-family: "BlowBrush", sans-serif;
   src: url("/blowbrush.105b11c9.ttf");
 }
+/* MIXIN (función) para display flex. */
+/*MIXIN (función) para la posición de un elemento. */
 header {
   display: flex;
   justify-content: space-between;
@@ -44,6 +51,7 @@ header ul li a:hover {
   font-weight: bold;
 }
 
+/* IMPORTE DE LAS TIPOGRAFÍAS */
 @font-face {
   font-family: "Poppins", sans-serif;
   src: url("/Poppins-Regular.afe0ffc8.ttf");
@@ -52,6 +60,8 @@ header ul li a:hover {
   font-family: "BlowBrush", sans-serif;
   src: url("/blowbrush.105b11c9.ttf");
 }
+/* MIXIN (función) para display flex. */
+/*MIXIN (función) para la posición de un elemento. */
 section {
   display: flex;
   justify-content: space-between;
@@ -63,6 +73,7 @@ section p {
   font-weight: bold;
 }
 
+/* IMPORTE DE LAS TIPOGRAFÍAS */
 @font-face {
   font-family: "Poppins", sans-serif;
   src: url("/Poppins-Regular.afe0ffc8.ttf");
@@ -71,6 +82,9 @@ section p {
   font-family: "BlowBrush", sans-serif;
   src: url("/blowbrush.105b11c9.ttf");
 }
+/* MIXIN (función) para display flex. */
+/*MIXIN (función) para la posición de un elemento. */
+/* Estilos carrusel de personajes.*/
 .carrusel {
   width: 90%;
   padding: 2em;
@@ -115,6 +129,7 @@ section p {
   background-color: white;
 }
 
+/* Estilos carrusel de escenarios.*/
 .carrusel2 {
   width: 90%;
   padding: 2em;
@@ -159,6 +174,12 @@ section p {
   background-color: white;
 }
 
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
 *, *::before, *::after {
   font-family: "Poppins", "san-serif";
   box-sizing: border-box;
@@ -178,6 +199,7 @@ h2 {
   font-family: "BlowBrush";
 }
 
+/* Estilos para el logo*/
 #logo {
   position: relative;
   top: 3vh;
@@ -187,6 +209,7 @@ h2 {
   width: 60%;
 }
 
+/* Estilos para que el vídeo aparezca detrás de logo.*/
 #video {
   position: absolute;
   left: 0;

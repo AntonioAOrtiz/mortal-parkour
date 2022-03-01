@@ -128,10 +128,13 @@ punto.forEach(function (cadaPunto, i) {
     var posicion = i; // Calculo el espacio que desplazarse el contenedor con las imágenes.
 
     var operacion = posicion * -50;
-    grande.style.transform = "translateX(".concat(operacion, "%)");
+    grande.style.transform = "translateX(".concat(operacion, "%)"); // Recorro todos los puntos.
+
     punto.forEach(function (cadaPunto, i) {
+      // Quito la clase activo a todos los botones para que cambie de color con sass.
       punto[i].classList.remove('activo');
-    });
+    }); // Añado la clase activo al botón pulsado.
+
     punto[i].classList.add('activo');
   });
 });
@@ -163,7 +166,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49696" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53615" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
