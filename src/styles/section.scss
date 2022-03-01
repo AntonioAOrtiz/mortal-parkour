@@ -1,6 +1,7 @@
 @import 'variables.scss';
 
 section{
+    // Aquí utilizo el mixin de display flex, space between.
     @include flex();
     flex-wrap: wrap;
     padding: 6vh;

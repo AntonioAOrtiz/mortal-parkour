@@ -1,4 +1,4 @@
-
+// Comentarios en Carrusel 1.
 const grande2 = document.querySelector('.grande2');
 const punto2 = document.querySelectorAll('.punto2')
 

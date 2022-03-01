@@ -23,7 +23,7 @@ body{
 h2{
     font-family: "BlowBrush";
 }
-
+/* Estilos para el logo*/
 #logo{
     @include position(relative,$top:3vh);
     display: block;
@@ -31,7 +31,7 @@ h2{
     height: 70%;
     width: 60%;
 }
-
+/* Estilos para que el vídeo aparezca detrás de logo.*/
 #video {
     position: absolute;
     left: 0;

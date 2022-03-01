@@ -1,15 +1,16 @@
 @import 'variables.scss';
 
 header{
+    // Mixin de display flex y space between.
     @include flex();
     background-color: black;
-    
+    // Estilos logo del header.
     img{
         height: 110px;
         width: 150px;
         background-color: white;
     }
-
+    // Estilos opciones del menú header.
     ul{
         padding-inline-start: 0px;
 
@@ -26,7 +27,7 @@ header{
                 font-weight: bold;
                 
             }
-
+            // Cuando el ratón pasa por arriba de las opciones hay un efecto.
             a:hover{
                 font-size: 24px;
                 transition: all 0.2s ease-in;

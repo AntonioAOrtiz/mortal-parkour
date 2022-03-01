@@ -1,3 +1,4 @@
+/* IMPORTE DE LAS TIPOGRAFÍAS */
 @font-face {
     font-family: 'Poppins', sans-serif;
     src: url("/fonts/Poppins-Regular.ttf");
@@ -9,14 +10,14 @@
     src: url("/fonts/blowbrush.ttf");
     
 }
-
+/* MIXIN (función) para display flex. */
 @mixin flex {
     display: flex;
     justify-content: space-between;
 }
 
 
-
+/*MIXIN (función) para la posición de un elemento. */
 @mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
   position: $position;
   top: $top;

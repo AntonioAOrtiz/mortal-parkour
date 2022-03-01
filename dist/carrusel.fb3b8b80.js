@@ -119,10 +119,14 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"js/carrusel.js":[function(require,module,exports) {
 var grande = document.querySelector('.grande');
-var punto = document.querySelectorAll('.punto');
+var punto = document.querySelectorAll('.punto'); // Recorro todos los puntos.
+
 punto.forEach(function (cadaPunto, i) {
+  // Asigno un click a cada punto.
   punto[i].addEventListener('click', function () {
-    var posicion = i;
+    // Guardo la posición del punto.
+    var posicion = i; // Calculo el espacio que desplazarse el contenedor con las imágenes.
+
     var operacion = posicion * -50;
     grande.style.transform = "translateX(".concat(operacion, "%)");
     punto.forEach(function (cadaPunto, i) {
